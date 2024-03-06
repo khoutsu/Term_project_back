@@ -1,7 +1,7 @@
 const { response } = require("express");
 let mysql = require("mysql");
-const env = require("./env.js");
-const config = require("./dbconfig.js")[env];
+const env = require("../controllers/env.js");
+const config = require("../controllers/dbconfig.js")[env];
 
 const adduser = async (req, res = response) => {
   console.log(req.body);
