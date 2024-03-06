@@ -14,6 +14,8 @@ router.post(
     check("email", "Valid email is required").isEmail(),
     check("password", "Password is required").notEmpty(),
     check("picture_thumbnail", "Picture is required").notEmpty(),
+    check("picture_large", "Picturelarge is required").notEmpty(),
+    check("picture_medium", "Picturemedium is required").notEmpty(),
     validateInput,
   ],
   adduser
