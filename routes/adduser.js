@@ -12,7 +12,7 @@ router.post(
     check("name_first", "Firstname is required").notEmpty(),
     check("name_last", "Lastname is required").notEmpty(),
     check("email", "Valid email is required").isEmail(),
-    check("password", "Password is required").notEmpty(),
+    check("login_password", "Password is required").notEmpty(),
     check("picture_thumbnail", "Picture is required").notEmpty(),
     validateInput,
   ],
